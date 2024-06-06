@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1717652696 source:c:\users\sadeg\source\repos\tankgame\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<windows.h>
+	<conio.h>
+

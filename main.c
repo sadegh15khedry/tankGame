@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <windows.h>
+#include <conio.h>
 #define N 20
 int count1=0;
 int volume=5 , speed=5 , j ,i , k , flag , count2=0;
@@ -117,6 +118,40 @@ void moving_tir(int m)
 
     map [gun[0]][gun[1]]=7;
 }
+
+void num1 (int l)
+{
+    map [mokhtasat1[0][0]] [mokhtasat1[0][1]]=l;
+    map [mokhtasat1[1][0]] [mokhtasat1[1][1]]=l;
+    map [mokhtasat1[2][0]] [mokhtasat1[2][1]]=l;
+    map [mokhtasat1[3][0]] [mokhtasat1[3][1]]=l;
+    map [mokhtasat1[4][0]] [mokhtasat1[4][1]]=l;
+    map [mokhtasat1[5][0]] [mokhtasat1[5][1]]=l;
+
+}
+void num (int l)
+{
+    map [mokhtasat[0][0]] [mokhtasat[0][1]]=l;
+    map [mokhtasat[1][0]] [mokhtasat[1][1]]=l;
+    map [mokhtasat[2][0]] [mokhtasat[2][1]]=l;
+    map [mokhtasat[3][0]] [mokhtasat[3][1]]=l;
+    map [mokhtasat[4][0]] [mokhtasat[4][1]]=l;
+    map [mokhtasat[5][0]] [mokhtasat[5][1]]=l;
+}
+void num2 (int l)
+{
+    map [mokhtasat2[0][0]] [mokhtasat2[0][1]]=l;
+    map [mokhtasat2[1][0]] [mokhtasat2[1][1]]=l;
+    map [mokhtasat2[2][0]] [mokhtasat2[2][1]]=l;
+    map [mokhtasat2[3][0]] [mokhtasat2[3][1]]=l;
+    map [mokhtasat2[4][0]] [mokhtasat2[4][1]]=l;
+    map [mokhtasat2[5][0]] [mokhtasat2[5][1]]=l;
+
+}
+
+
+
+
 void shoot (int o)
 {
     if (o==0)
@@ -1046,35 +1081,6 @@ void e1_movement ()
 
     }
 }
-void num1 (int l)
-{
-    map [mokhtasat1[0][0]] [mokhtasat1[0][1]]=l;
-    map [mokhtasat1[1][0]] [mokhtasat1[1][1]]=l;
-    map [mokhtasat1[2][0]] [mokhtasat1[2][1]]=l;
-    map [mokhtasat1[3][0]] [mokhtasat1[3][1]]=l;
-    map [mokhtasat1[4][0]] [mokhtasat1[4][1]]=l;
-    map [mokhtasat1[5][0]] [mokhtasat1[5][1]]=l;
-
-}
-void num (int l)
-{
-    map [mokhtasat[0][0]] [mokhtasat[0][1]]=l;
-    map [mokhtasat[1][0]] [mokhtasat[1][1]]=l;
-    map [mokhtasat[2][0]] [mokhtasat[2][1]]=l;
-    map [mokhtasat[3][0]] [mokhtasat[3][1]]=l;
-    map [mokhtasat[4][0]] [mokhtasat[4][1]]=l;
-    map [mokhtasat[5][0]] [mokhtasat[5][1]]=l;
-}
-void num2 (int l)
-{
-    map [mokhtasat2[0][0]] [mokhtasat2[0][1]]=l;
-    map [mokhtasat2[1][0]] [mokhtasat2[1][1]]=l;
-    map [mokhtasat2[2][0]] [mokhtasat2[2][1]]=l;
-    map [mokhtasat2[3][0]] [mokhtasat2[3][1]]=l;
-    map [mokhtasat2[4][0]] [mokhtasat2[4][1]]=l;
-    map [mokhtasat2[5][0]] [mokhtasat2[5][1]]=l;
-
-}
 void movement ()
 {
     in1=rand()%4;
@@ -1253,4 +1259,3 @@ int main ()
     menu();
     return 0;
 }
-
